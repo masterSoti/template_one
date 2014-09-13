@@ -1,0 +1,207 @@
+html
+{
+	height:100%;
+}
+body
+{
+	width:100%;
+	background-image:url("images/binding_light.png");
+	background-color:rgb(200, 200, 200);
+	min-height: 100%;
+    position:relative;
+}
+#home_nav
+{
+	background-color:#0090D7;
+	height:67px;
+	margin-top:-8px;
+	margin-left:-8px;
+	position: fixed;
+	width: 100%;	
+	z-index:2;
+}
+#home_nav table
+{
+	width:1050px;
+	margin: -4 auto;
+}
+#home_nav td
+{
+	width:175px;
+	color:white;
+	line-height:67px;
+	text-align:center;
+	cursor:pointer;
+}
+#home_nav td:hover
+{
+	background-color:white;
+	color:#0090D7;
+}
+#home_header
+{
+	height:350px;
+	width:100%;
+	margin-left:-8px;
+	margin-top:0px;
+	background:url("http://visualsonline.cancer.gov/retrieve.cfm?imageid=2397&dpi=300&fileformat=jpg") no-repeat center center fixed;
+	background-size:cover;
+	background-color:white;
+}
+#home_full
+{
+	background:url("images/binding_light.png") repeat center center fixed;
+	background-color:rgb(200, 200, 200);
+	height:auto;
+	width:100.5%;
+	margin-left:-8px;
+	margin-top: -20px;
+	z-index:1;
+	padding-bottom: 340px; 
+}
+#home_container
+{
+	width:1050px;
+	margin:auto;
+	height:auto;
+	margin-top:20px;
+}
+#home_food
+{
+	height:300px;
+	background-color:#0090D7;
+	width:1050px;
+	margin-top:20px;
+	border-radius:10px;
+	box-shadow:10px 10px 10px rgb(92, 92, 92);
+}
+#home_food:hover
+{
+	box-shadow:20px 20px 20px rgb(92, 92, 92);
+	width:1055px;
+	height:305px;
+}
+#home_food #img
+{
+	width:47.619047619%;
+	height:100%;
+	background-color:gray;
+	display:inline-block;
+}
+#home_food img
+{
+	width:100%;
+	height:100%;
+}
+#home_footer
+{
+	height: 300px; 
+    width:100%;
+    position: absolute;
+    left: -8px;
+    bottom: -8px; 
+	background-color:gray;
+	margin-top:20px;
+	padding-bottom:20px;
+}
+#home_footer table
+{
+	margin:auto;
+}
+#home_footer td
+{
+	text-align:center;
+	color:white;
+	width:400px;
+	height:80px;
+}
+#home_food_info
+{
+	float:right;
+	text-align:center;
+	width:500px;
+	color:white;
+	margin-right:23px;
+}
+#home_recipe_box
+{
+	background-color:white;
+	color:#0090D7;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	border-radius:75px;
+	display:inline-block;
+	margin-top:35px;
+	cursor:pointer;
+}
+#home_recipe_box:hover
+{
+	color:white;
+	background-color:rgb(175, 175, 175);
+	width:105px;
+	height:55px;
+}
+#home_silde_toggle
+{
+	background-color:white;
+	height:auto;
+	opacity:0.95;
+	display:none;
+	margin-top: -8px;
+	box-shadow: 5px 5px 5px rgb(92, 92, 92);
+}
+#home_fake
+{
+	color:#0090D7;
+	text-align:center;
+	height:67px;
+	line-height:67px;
+	cursor:pointer;
+}
+#home_hover_bars
+{
+	width:1050px;
+	position:fixed;
+	left:50%;
+	z-index:3;
+	margin-left:-525px;
+}
+.home_one
+{
+	margin-left:175px;
+	width:173px;
+}
+.home_two
+{
+	margin-left: 350px;
+	width:172px;
+}
+.home_three
+{
+	margin-left:524px;
+	width:174px;
+}
+.home_four
+{
+	margin-left:700px;
+	width:173px;
+}
+.home_five
+{
+	margin-left: 875px;
+	width:173px;
+}
+#home_slide_content
+{
+	text-align:center;
+	width:100%;
+	color:#0090D7;
+	line-height:45px;
+	cursor:pointer;
+}
+#home_slide_content:hover
+{
+	background-color:#0090D7;
+	color:white;
+}
