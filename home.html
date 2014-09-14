@@ -5,21 +5,20 @@
 		<script type="text/javascript" src="jquery-1.11.1.js"></script>
 	</head>
 	<body>
-		<!-- use this for the nav bar http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu== No because mine fits theme more -->
 		<div id="home_nav">
 			<table>
 				<tr>
 					<td style="font:20px;">Some Logo</td>
-					<td id="home_javascript1">Home</td>
-					<td id="home_javascript2">Menu</td>
-					<td id="home_javascript3">Nutrition</td>
-					<td id="home_javascript4">About Chefs</td>
-					<td id="home_javascript5">About Us</td>
+					<td id="home_javascript-1">Home</td>
+					<td id="home_javascript-2">Menu</td>
+					<td id="home_javascript-3">Nutrition</td>
+					<td id="home_javascript-4">About Chefs</td>
+					<td id="home_javascript-5">About Us</td>
 				</tr>
 			</table>
 		</div>
 		<div id="home_hover_bars">	
-			<div id="home_silde_toggle" class="home_one">
+			<div id="home_silde_toggle" class="home-1">
 				<div id="home_fake">Home</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
@@ -28,7 +27,7 @@
 				<div id="home_slide_content">dsfgdfgsdfg</div>
 			</div>
 			
-			<div id="home_silde_toggle" class="home_two">
+			<div id="home_silde_toggle" class="home-2">
 				<div id="home_fake">Menu</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
@@ -38,7 +37,7 @@
 
 			</div>
 			
-			<div id="home_silde_toggle" class="home_three">
+			<div id="home_silde_toggle" class="home-3">
 				<div id="home_fake">Nutrition</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
@@ -48,7 +47,7 @@
 
 			</div>
 			
-			<div id="home_silde_toggle" class="home_four">
+			<div id="home_silde_toggle" class="home-4">
 				<div id="home_fake">About Chefs</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
@@ -58,7 +57,7 @@
 
 			</div>
 			
-			<div id="home_silde_toggle" class="home_five">
+			<div id="home_silde_toggle" class="home-5">
 				<div id="home_fake">About Us</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
 				<div id="home_slide_content">dsfgdfgsdfg</div>
@@ -146,56 +145,15 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-	$(document).ready(
-		function(){
-			$("#home_javascript1, .home_one").hover(
-				function()
-					{$(".home_one").css("display","block");},
-				function()
-					{$(".home_one").css("display","none");}
-			);
-		}
-	);
-
-	$(document).ready(
-		function(){
-		$("#home_javascript2, .home_two").hover(
-			function()
-			{$(".home_two").css("display","block");},
-			function()
-			{$(".home_two").css("display","none");}
-		);
-	}
-);
-$(document).ready(
-	function(){
-		$("#home_javascript3, .home_three").hover(
-			function()
-			{$(".home_three").css("display","block");},
-			function()
-			{$(".home_three").css("display","none");}
-		);
-	}
-);
-$(document).ready(
-	function(){
-		$("#home_javascript4, .home_four").hover(
-			function()
-			{$(".home_four").css("display","block");},
-			function()
-			{$(".home_four").css("display","none");}
-		);
-	}
-);
-$(document).ready(
-	function(){
-		$("#home_javascript5, .home_five").hover(
-			function()
-			{$(".home_five").css("display","block");},
-			function()
-			{$(".home_five").css("display","none");}
-		);
-	}
-);
+	$(document).ready(function() {
+		$("#home_nav td, #home_silde_toggle").hover(function(){ 
+			console.log('detected');
+			var id = $(this).attr('id').split('-')[1];
+			console.log(id);
+			$(".home-" + id).css("display","block"); 
+		}, function() {
+			$(".home-" + id).css("display","none");
+		});
+	});
 	</script>
 </html>

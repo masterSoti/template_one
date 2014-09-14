@@ -150,6 +150,12 @@ body
 	display:none;
 	margin-top: -8px;
 	box-shadow: 5px 5px 5px rgb(92, 92, 92);
+	width: 100px;
+}
+
+#home_silde_toggle #home-1 {
+	width: 100px;
+	height: 60px;
 }
 #home_fake
 {
@@ -166,31 +172,6 @@ body
 	left:50%;
 	z-index:3;
 	margin-left:-525px;
-}
-.home_one
-{
-	margin-left:175px;
-	width:173px;
-}
-.home_two
-{
-	margin-left: 350px;
-	width:172px;
-}
-.home_three
-{
-	margin-left:524px;
-	width:174px;
-}
-.home_four
-{
-	margin-left:700px;
-	width:173px;
-}
-.home_five
-{
-	margin-left: 875px;
-	width:173px;
 }
 #home_slide_content
 {
