@@ -33,9 +33,9 @@ body
 	text-align:center;
 	cursor:pointer;
 }
-#home_nav td:hover
+#some_logo:hover
 {
-	background-color:white;
+	background-color: white;
 	color:#0090D7;
 }
 #home_header
@@ -148,15 +148,10 @@ body
 	height:auto;
 	opacity:0.95;
 	display:none;
-	margin-top: -8px;
 	box-shadow: 5px 5px 5px rgb(92, 92, 92);
-	width: 100px;
+	width: 173px;
 }
 
-#home_silde_toggle #home-1 {
-	width: 100px;
-	height: 60px;
-}
 #home_fake
 {
 	color:#0090D7;
@@ -171,7 +166,7 @@ body
 	position:fixed;
 	left:50%;
 	z-index:3;
-	margin-left:-525px;
+	margin-left:-352px;
 }
 #home_slide_content
 {

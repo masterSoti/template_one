@@ -3,12 +3,13 @@
 		<title>First Template</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
 		<div id="home_nav">
 			<table>
 				<tr>
-					<td style="font:20px;">Some Logo</td>
+					<td style="font:20px;" id="some_logo">Some Logo</td>
 					<td id="home_javascript-1">Home</td>
 					<td id="home_javascript-2">Menu</td>
 					<td id="home_javascript-3">Nutrition</td>
@@ -145,15 +146,5 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-	$(document).ready(function() {
-		$("#home_nav td, #home_silde_toggle").hover(function(){ 
-			console.log('detected');
-			var id = $(this).attr('id').split('-')[1];
-			console.log(id);
-			$(".home-" + id).css("display","block"); 
-		}, function() {
-			$(".home-" + id).css("display","none");
-		});
-	});
 	</script>
 </html>
