@@ -63,7 +63,7 @@ body
 {
 	width:1050px;
 	margin:auto;
-	height:auto;
+	height:945px;
 	margin-top:20px;
 }
 #home_food
@@ -151,7 +151,6 @@ body
 	box-shadow: 5px 5px 5px rgb(92, 92, 92);
 	width: 173px;
 }
-
 #home_fake
 {
 	color:#0090D7;
